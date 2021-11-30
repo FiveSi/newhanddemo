@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.util.ArrayList;
 public class Protest {
      public static void main(String[] args) {
         // You can test the method here
@@ -16,7 +17,7 @@ public class Protest {
         Scanner scanner = new Scanner(System.in);
          while (true) {
             String pLay = scanner.nextLine();
-            if (pLay.equals("y")) {
+            if (pLay.toLowerCase().equals("y")) {
                // System.out.println("hello");
                 Random ramStr = new Random(); 
                 int ramStrs = ramStr.nextInt(26); // ramdom char
@@ -25,16 +26,17 @@ public class Protest {
                 System.out.println("this is answer: " + array[ramStrs]);
                 System.out.println("guess a char a-z");
                 int count = 6; // count numer
+                ArrayList<String> list = new ArrayList<>();
 
-                
                 for (int i = 0; i < count; i++) {
                 String guessNumber = scanner.nextLine(); // guess char 
-                System.out.println("YOU guess word is : " + guessNumber); // print to me see guess char
+                // System.out.println("YOU guess word is : " + guessNumber); // print to me see guess char
                     if (guessNumber.equals(array[ramStrs])) {
                         System.out.println("u win");
                         break;
                     } else if (i == 0) {
-                        System.out.println("You wrong , life -1 ");
+                        list.add(guessNumber);
+                        System.out.println("You wrong , life -1 " + list.get(0) + " is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
@@ -45,7 +47,8 @@ public class Protest {
                         System.out.println("       -----  ");
                     } 
                     else if (i == 1) {
-                        System.out.println("u wrong life -2 ");
+                        list.add(guessNumber);
+                        System.out.println("u wrong life -2 " + list.get(0) + ", " + list.get(1) + ", " + " is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
@@ -57,7 +60,8 @@ public class Protest {
 
                     } 
                     else if (i == 2) {
-                        System.out.println("u wrong life -3 ");
+                        list.add(guessNumber);
+                        System.out.println("u wrong life -3 " + list.get(0)  + ", "+ list.get(1)  + ", "+ list.get(2)  + ", "+" is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
@@ -68,7 +72,8 @@ public class Protest {
                         System.out.println("       -----  ");
                     } 
                     else if (i == 3) {
-                        System.out.println("u wrong life -4 ");
+                        list.add(guessNumber);
+                        System.out.println("u wrong life -4 " + list.get(0)  + ", "+ list.get(1)  + ", "+ list.get(2)  + ", "+ list.get(3)  + ", "+" is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
@@ -79,7 +84,8 @@ public class Protest {
                         System.out.println("       -----  ");
                     } 
                     else if (i == 4) {
-                        System.out.println("u wrong life -5 ");
+                        list.add(guessNumber);
+                        System.out.println("u wrong life -5 " + list.get(0)  + ", "+ list.get(1)  + ", "+ list.get(2)  + ", "+ list.get(3)  + ", "+ list.get(4)  + ", "+" is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
@@ -90,7 +96,8 @@ public class Protest {
                         System.out.println("       -----  ");
                     } 
                     else if (i == 5) {
-                        System.out.println("YOU LOSE 886 ");
+                        list.add(guessNumber);
+                        System.out.println("YOU LOSE 886 "  + list.get(0)  + ", "+ list.get(1)  + ", "+ list.get(2)  + ", "+ list.get(3)  + ", "+ list.get(4) + ", "+ list.get(5)  + ", "+" is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
@@ -104,7 +111,7 @@ public class Protest {
                     
                 }
                           
-            }else if (pLay.equals("n")) {
+            }else if (pLay.toLowerCase().equals("n")) {
                 break;
             }else {
                 System.out.println("DO YOU WANT PLAY(Y/N)");
