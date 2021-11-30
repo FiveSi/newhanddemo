@@ -1,5 +1,5 @@
 let list = [];
-let r = 50;
+let r = 49;
 for (i = 1; i < 50; i++) {
   list[i-1] = i;
 }
