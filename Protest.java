@@ -36,7 +36,7 @@ public class Protest {
                         break;
                     } else if (i == 0) {
                         list.add(guessNumber);
-                        System.out.println("You wrong , life -1 " + list.get(0) + " is not ");
+                        System.out.println("You wrong , life 5 " + list.get(0) + " is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
@@ -48,7 +48,7 @@ public class Protest {
                     } 
                     else if (i == 1) {
                         list.add(guessNumber);
-                        System.out.println("u wrong life -2 " + list.get(0) + ", " + list.get(1) + ", " + " is not ");
+                        System.out.println("u wrong life 4 " + list.get(0) + ", " + list.get(1) + ", " + " is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
@@ -61,7 +61,7 @@ public class Protest {
                     } 
                     else if (i == 2) {
                         list.add(guessNumber);
-                        System.out.println("u wrong life -3 " + list.get(0)  + ", "+ list.get(1)  + ", "+ list.get(2)  + ", "+" is not ");
+                        System.out.println("u wrong life 3 " + list.get(0)  + ", "+ list.get(1)  + ", "+ list.get(2)  + ", "+" is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
@@ -73,7 +73,7 @@ public class Protest {
                     } 
                     else if (i == 3) {
                         list.add(guessNumber);
-                        System.out.println("u wrong life -4 " + list.get(0)  + ", "+ list.get(1)  + ", "+ list.get(2)  + ", "+ list.get(3)  + ", "+" is not ");
+                        System.out.println("u wrong life 2 " + list.get(0)  + ", "+ list.get(1)  + ", "+ list.get(2)  + ", "+ list.get(3)  + ", "+" is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
@@ -85,7 +85,7 @@ public class Protest {
                     } 
                     else if (i == 4) {
                         list.add(guessNumber);
-                        System.out.println("u wrong life -5 " + list.get(0)  + ", "+ list.get(1)  + ", "+ list.get(2)  + ", "+ list.get(3)  + ", "+ list.get(4)  + ", "+" is not ");
+                        System.out.println("u wrong life 1 " + list.get(0)  + ", "+ list.get(1)  + ", "+ list.get(2)  + ", "+ list.get(3)  + ", "+ list.get(4)  + ", "+" is not ");
                         System.out.println("");
                         System.out.println("          --------- ");
                         System.out.println("         |         | ");
