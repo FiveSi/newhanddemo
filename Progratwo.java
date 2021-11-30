@@ -18,11 +18,15 @@ public class Progratwo {
                 break;
             };
             if (uNu > randomNumber) {
-                nAn = uNu;
+                    if (uNu < nAn) {
+                        nAn = uNu;
+                    }
                 System.out.println("The number range is :" + nBn + " to " +  nAn );
             };
             if (uNu < randomNumber) {
-                nBn = uNu;    
+                if (uNu > nBn) {
+                    nBn = uNu;
+                }
                 System.out.println("The number range is :" + nBn + " to " +  nAn );
             };
           }
