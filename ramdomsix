@@ -1,0 +1,60 @@
+import java.util.ArrayList;
+import java.util.Random;
+public class RandomNumberss {
+     public static void main(String[] args) {
+        // You can test the method here
+        ArrayList<Integer> list = new ArrayList<>();
+        // mark six first 3
+        list.add(0);
+        list.add(17);
+        list.add(22);
+        list.add(26);
+        list.add(38);
+        list.add(44);
+        list.add(8);
+        list.add(2);
+        list.add(14);
+        list.add(30);
+        list.add(41);
+        list.add(42);
+        list.add(44);
+        list.add(22);
+        list.add(10);
+        list.add(28);
+        list.add(36);
+        list.add(39);
+        list.add(47);
+        list.add(48);
+        list.add(44);
+
+
+        // ramdom
+        int stop = 0;
+        for (int i = 0 ; i < 200 ; i++) {
+            
+        Random ramdomNum = new Random(); 
+        int randomNumber = ramdomNum.nextInt(50);
+        if (list.contains(randomNumber)) {
+            System.out.println("");
+        } else if (randomNumber == 0) {
+            System.out.println("");
+        } else {
+            System.out.println(randomNumber);
+            stop++;
+        }
+        if (stop == 6) {
+            break;
+        }
+
+        
+    
+    }
+
+
+        
+
+
+
+
+    }
+}
